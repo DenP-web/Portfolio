@@ -21,6 +21,8 @@ export default createGlobalStyle`
     body {
         font-family: 'Inter', sans-serif;
         font-size: 16px;
+        font-weight: 300;
+        line-height: 1.3;
         color: #0A0000;
         margin: 0;
         padding: 0;
