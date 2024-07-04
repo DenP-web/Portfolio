@@ -1,0 +1,41 @@
+.aboutSection {
+  position: absolute;
+  max-width: 1000px;
+  padding: 0 15px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.helloTitle {
+  font-size: 38px;
+
+  @include mxw($lg) {
+    font-size: 34px;
+  }
+  @include mxw($md) {
+    font-size: 30px;
+  }
+  @include mxw($sm) {
+    font-size: 26px;
+  }
+  @include mxw($xs) {
+    font-size: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+
+  @include mxw($lg) {
+    gap: 40px;
+  }
+
+  @include mxw($md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,16 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import Header from "../../components/Header/Header";
+import Header from "../../components/Header";
 
-import { Wrapper } from "./styles";
+import styles from './RootPage.module.scss'
 
 const RootPage: React.FC = () => {
   return (
-    <Wrapper>
+    <div className={styles.wrapper}>
       <Header />
       <Outlet />
-    </Wrapper>
+    </div>
   );
 };
 

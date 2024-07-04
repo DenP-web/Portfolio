@@ -1,9 +1,9 @@
 import React from "react";
-import { List, SocialLink, StyledLink } from "./styled";
 
-import Icon from "../Icon/Icon";
+import styles from './NavList.module.scss'
 
 import { ILink } from "../../models";
+import { Link } from "react-router-dom";
 
 interface NavListProps {
   links: ILink[];
@@ -11,19 +11,17 @@ interface NavListProps {
 
 const NavList: React.FC<NavListProps> = ({ links }: NavListProps) => {
   return (
-    <List>
+    <ul className={styles.list}>
       {links.map((link: ILink, index: number) => (
         <li key={index}>
           {link.to !== undefined ? (
-            <StyledLink to={link.to}>{link.text}</StyledLink>
+            <Link className={styles.link} to={link.to}>{link.text}</Link>
           ) : (
-            <SocialLink href={link.href}>
-              <Icon id={link.iconId!} />
-            </SocialLink>
+            <a className={styles.socialLink} href={link.href}></a>
           )}
         </li>
       ))}
-    </List>
+    </ul>
   );
 };
 

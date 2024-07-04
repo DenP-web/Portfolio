@@ -1,0 +1,23 @@
+.text {
+  max-width: 650px;
+
+  p {
+    font-size: 24px;
+
+    @include mxw($lg) {
+      font-size: 22px;
+    }
+
+    @include mxw($md) {
+      font-size: 20px;
+    }
+
+    @include mxw($sm) {
+      font-size: 18px;
+    }
+
+    @include mxw($xs) {
+      font-size: 16px;
+    }
+  }
+}

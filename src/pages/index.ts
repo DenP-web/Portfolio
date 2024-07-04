@@ -1,7 +1,7 @@
-import HomePage from "./HomePage/HomePage";
-import ProjectsPage from "./ProjectsPage/ProjectsPage";
-import AchievementsPage from "./AchievementsPage/AchievementsPage";
-import RootPage from "./RootPage/RootPage";
+import HomePage from "./AboutPage";
+import ProjectsPage from "./ProjectsPage";
+import AchievementsPage from "./AchievementsPage";
+import RootPage from "./RootPage";
 
 export {
   HomePage, ProjectsPage, AchievementsPage, RootPage

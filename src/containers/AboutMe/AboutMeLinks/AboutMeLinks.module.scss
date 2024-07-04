@@ -1,0 +1,38 @@
+.link {
+  position: relative;
+  font-size: 20px;
+  padding: 10px 0 10px 50px;
+  display: block;
+  background-position: left;
+  background-size: 32px 40px;
+  background-repeat: no-repeat;
+
+  span {
+    position: relative;
+  }
+
+  span::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    right: -14px;
+    top: -10px;
+    background-image: url('../../../assets/images/shuriken.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include mxw($md) {
+    font-size: 18px;
+  }
+
+  &--portfolio {
+    background-image: url('../../../assets/images/doc.svg');
+    margin-bottom: 20px;
+  }
+
+  &--achiev {
+    background-image: url('../../../assets/images/plate.svg');
+  }
+}

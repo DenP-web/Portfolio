@@ -1,9 +1,11 @@
 import React from "react";
-import Icon from "../Icon/Icon";
 
-import { Logo, Nav } from "./styles";
-import NavList from "../NavList/NavList";
+import Logo from "../Logo";
+import NavList from "../NavList";
+
 import { ILink } from "../../models";
+
+import styles from './Header.module.scss'
 
 const Header: React.FC = () => {
   const socialLinks: ILink[] = [ // In future this data will come from server
@@ -19,13 +21,11 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <Nav>
-        <Logo>
-          <Icon id="logo" />
-        </Logo>
+      <nav className={styles.navigation}>
+        <Logo />
         <NavList links={navigationLinks} />
         <NavList links={socialLinks} />
-      </Nav>
+      </nav>
     </header>
   );
 };
