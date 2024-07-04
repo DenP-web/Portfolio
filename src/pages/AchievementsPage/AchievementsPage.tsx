@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ResumePage: React.FC = () => {
+const AchievementsPage: React.FC = () => {
   return (
     <div>
       ResumePage
@@ -8,4 +8,4 @@ const ResumePage: React.FC = () => {
   )
 }
 
-export default ResumePage
+export default AchievementsPage

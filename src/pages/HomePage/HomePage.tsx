@@ -1,10 +1,11 @@
 import React from 'react'
+import AboutMe from '../../components/AboutMe/AboutMe'
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      Home
-    </div>
+    <main>
+      <AboutMe />
+    </main>
   )
 }
 

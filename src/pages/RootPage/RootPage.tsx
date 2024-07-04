@@ -1,14 +1,17 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Header from '../../components/Header/Header'
+import React from "react";
+import { Outlet } from "react-router-dom";
+
+import Header from "../../components/Header/Header";
+
+import { Wrapper } from "./styles";
 
 const RootPage: React.FC = () => {
   return (
-    <div>
+    <Wrapper>
       <Header />
       <Outlet />
-    </div>
-  )
-}
+    </Wrapper>
+  );
+};
 
-export default RootPage
+export default RootPage;
