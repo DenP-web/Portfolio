@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SocialLink.module.scss";
 import classNames from "classnames";
 
-interface SocialLink {
+interface SocialLinkProps {
   classes: string[];
   href: string;
   srText: string;
@@ -11,7 +11,7 @@ interface SocialLink {
 
 const cx = classNames.bind(styles);
 
-const SocialLink: React.FC<SocialLink> = ({ classes, href, srText, index }) => {
+const SocialLink: React.FC<SocialLinkProps> = ({ classes, href, srText, index }) => {
   const className = cx({
     "slide-left-anim": true,
     ...classes.reduce((acc, cls) => ({ ...acc, [styles[cls]]: true }), {}),

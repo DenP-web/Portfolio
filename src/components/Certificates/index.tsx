@@ -2,9 +2,9 @@ import React, { ReactElement } from "react";
 
 import { CertificatImg } from "../../ui";
 
-import styles from "./Certificates.module.scss";
-
 import { ICertificat } from "../../models";
+
+import styles from "./Certificates.module.scss";
 
 const certificates: ICertificat[] = [
   {
@@ -34,7 +34,12 @@ const Certificates: React.FC = () => {
     <ul className={styles.certificates}>
       {certificates.map(
         (item: ICertificat, index: number): ReactElement => (
-          <CertificatImg key={item.id} imgUrl={item.imgUrl} indexAnim={index+1} alt={item.alt} />
+          <CertificatImg
+            key={item.id}
+            imgUrl={item.imgUrl}
+            indexAnim={index + 1}
+            alt={item.alt}
+          />
         )
       )}
     </ul>

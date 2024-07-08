@@ -3,7 +3,7 @@ import classNames from "classnames";
 import styles from "./ProjectItem.module.scss";
 import { AccentBtn } from "../../ui";
 
-interface ProjectItem {
+interface ProjectItemProps {
   href: string;
   title: string;
   technologies: string[];
@@ -11,7 +11,7 @@ interface ProjectItem {
   animIndex: number
 }
 
-const ProjectItem: React.FC<ProjectItem> = ({
+const ProjectItem: React.FC<ProjectItemProps> = ({
   href,
   title,
   technologies,

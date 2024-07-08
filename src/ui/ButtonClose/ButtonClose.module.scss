@@ -1,0 +1,25 @@
+.button {
+  cursor: pointer;
+  right: 15px;
+  top: 5px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $c-accent;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}

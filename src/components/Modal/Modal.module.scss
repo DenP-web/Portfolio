@@ -1,4 +1,6 @@
 .backdrop {
+  z-index: 101;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -13,8 +15,10 @@
 }
 
 .content {
+  z-index: 102;
+
   position: relative;
-  padding: 20px;
+  padding: 20px 40px;
   box-sizing: border-box;
   min-height: 50px;
   min-width: 50px;

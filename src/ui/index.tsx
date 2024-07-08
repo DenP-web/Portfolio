@@ -6,7 +6,8 @@ import Text from "./Text";
 import CertificatImg from "./CertificatImg";
 import Resume from "./Resume";
 import AccentBtn from "./AccentBtn";
+import ButtonClose from "./ButtonClose";
 
 export {
-  BigTitle, Logo, CustomLink, SocialLink, Text, CertificatImg, Resume, AccentBtn
+  BigTitle, Logo, CustomLink, SocialLink, Text, CertificatImg, Resume, AccentBtn, ButtonClose
 }
