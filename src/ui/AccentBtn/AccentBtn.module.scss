@@ -9,6 +9,10 @@
   background-color: $c-white;
   overflow: hidden;
 
+  @include mxw($xs) {
+    padding: 10px 30px;
+  }
+
   &::after {
     content: '';
     z-index: -1;
