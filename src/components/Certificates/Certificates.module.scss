@@ -1,6 +1,7 @@
 .certificates {
   margin-top: 50px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 44px;
 
   &::-webkit-scrollbar {
@@ -8,6 +9,7 @@
   }
 
   @include mxw($sm) {
+    display: flex;
     gap: 30px;
     overflow-x: auto;
   }

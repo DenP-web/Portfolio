@@ -1,13 +1,13 @@
 import React from "react";
 
-import { BigTitle, DownloadBtn, Resume, Text } from "../../ui";
+import { BigTitle, AccentBtn, Resume, Text } from "../../ui";
 import { Certificates } from "../../components";
 
 import styles from "./Achievements.module.scss";
 
 const Achievements: React.FC = () => {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.achievementsSection}>
       <div className={styles.left}>
         <BigTitle>RESUME</BigTitle>
         <Text>
@@ -19,11 +19,11 @@ const Achievements: React.FC = () => {
 
       <div className={styles.right}>
         <Resume />
-        <DownloadBtn href="/CV.pdf" fileName="Denys_Popov_CV.pdf">
+        <AccentBtn href="/CV.pdf" fileName="Denys_Popov_CV.pdf">
           Download CV
-        </DownloadBtn>
+        </AccentBtn>
       </div>
-    </div>
+    </section>
   );
 };
 

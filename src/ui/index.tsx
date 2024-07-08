@@ -5,8 +5,8 @@ import SocialLink from "./SocialLink";
 import Text from "./Text";
 import CertificatImg from "./CertificatImg";
 import Resume from "./Resume";
-import DownloadBtn from "./DownloadBtn";
+import AccentBtn from "./AccentBtn";
 
 export {
-  BigTitle, Logo, CustomLink, SocialLink, Text, CertificatImg, Resume, DownloadBtn
+  BigTitle, Logo, CustomLink, SocialLink, Text, CertificatImg, Resume, AccentBtn
 }

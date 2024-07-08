@@ -1,15 +1,15 @@
 import React, { ReactNode } from "react";
 
-import styles from "./DownloadBtn.module.scss";
+import styles from "./AccentBtn.module.scss";
 import classNames from "classnames";
 
-interface DownloadBtnProps {
-  fileName: string;
+interface AccentBtnProps {
+  fileName?: string;
   href: string;
   children: ReactNode;
 }
 
-const DownloadBtn: React.FC<DownloadBtnProps> = ({
+const AccentBtn: React.FC<AccentBtnProps> = ({
   fileName,
   href,
   children,
@@ -25,4 +25,4 @@ const DownloadBtn: React.FC<DownloadBtnProps> = ({
   );
 };
 
-export default DownloadBtn;
+export default AccentBtn;

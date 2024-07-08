@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "./CertificatImg.module.scss";
-import { ICertificat } from "../../models";
+
 import classNames from "classnames";
 
 interface CertificatImgProps {
-  certificat: ICertificat;
+  imgUrl: string,
+  alt: string,
+  indexAnim?: number
 }
 
-const CertificatImg: React.FC<CertificatImgProps> = ({ certificat }) => {
+const CertificatImg: React.FC<CertificatImgProps> = ({ imgUrl, alt, indexAnim }) => {
   return (
     <li
       className={classNames(styles.item, "slide-left-anim")}
-      style={{ "--anim-order": certificat.id }}
+      style={{ "--anim-order": indexAnim }}
     >
-      <img src={certificat.imgUrl} alt={certificat.alt} />
+      <img src={imgUrl} alt={alt} />
     </li>
   );
 };
