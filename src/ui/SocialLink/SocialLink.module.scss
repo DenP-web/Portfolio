@@ -1,0 +1,31 @@
+.socialLink {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: box-shadow .3s linear;
+  background-size: contain;
+  fill: #005FF1;
+
+  &--telegram {
+    background-image: url('../../assets/images/telegram.svg');
+  }
+
+  &--linked {
+    background-image: url('../../assets/images/linked.svg');
+  }
+
+  &--github {
+    background-image: url('../../assets/images/github.svg');
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px #005FF1
+  }
+
+  @include mxw($xs) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+}

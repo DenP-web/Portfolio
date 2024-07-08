@@ -1,0 +1,15 @@
+.cv {
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  border: 1px solid $c-accent;
+  border-radius: 10px;
+  max-height: 680px;
+  margin-bottom: 60px;
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+}

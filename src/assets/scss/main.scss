@@ -2,6 +2,27 @@
 @import './reset.scss';
 @import './vars.scss';
 @import './mixins.scss';
+@import './anim.scss';
+
+html, body {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #005FF14D;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $c-accent;
+  }
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -9,4 +30,14 @@ body {
   font-weight: 400;
   line-height: 1.3;
   background-color: var(--c-white);
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px)
 }

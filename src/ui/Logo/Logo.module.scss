@@ -1,0 +1,10 @@
+.logo img {
+  width: 230px;
+  height: 48px;
+  display: block;
+  
+  @include mxw($xs) {
+    width: 145px;
+    height: 34px;
+  }
+}

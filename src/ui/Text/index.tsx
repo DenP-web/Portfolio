@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import styles from './Text.module.scss'
+import classNames from 'classnames'
 
 
 interface TextProps {
@@ -8,7 +9,7 @@ interface TextProps {
 
 const Text: React.FC<TextProps> = ({children}) => {
   return (
-    <div className={styles.text}>
+    <div className={classNames(styles.text, 'scale-anim')}>
       <p>{children}</p>
     </div>
   )

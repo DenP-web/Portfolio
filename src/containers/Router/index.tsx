@@ -6,22 +6,23 @@ import {
   ProjectsPage,
   RootPage,
 } from "../../pages";
+import { ROUTES } from '../../constants/routes';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: ROUTES.ABOUT,
     element: <RootPage />,
     children: [
       {
-        path: "/",
+        path: ROUTES.ABOUT,
         element: <HomePage />,
       },
       {
-        path: "projects",
+        path: ROUTES.PROJECTS,
         element: <ProjectsPage />,
       },
       {
-        path: "achievements",
+        path: ROUTES.ACHIEVEMENTS,
         element: <AchievementsPage />,
       },
     ],

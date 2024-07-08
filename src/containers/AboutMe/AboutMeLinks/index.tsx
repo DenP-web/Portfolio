@@ -4,7 +4,7 @@ import styles from './AboutMeLinks.module.scss'
 
 const AboutMeLinks: React.FC = () => {
   return (
-    <ul>
+    <ul className="scale-anim">
       <li>
         <Link className={`${styles.link} ${styles['link--portfolio']}`} to="/achievements">
           <span>If you want my CV</span>

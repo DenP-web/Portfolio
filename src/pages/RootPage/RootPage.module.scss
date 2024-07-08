@@ -2,4 +2,8 @@
   padding: 0 15px;
   height: 100vh;
   overflow: hidden;
+
+  @include mxw($lg) {
+    overflow-y: auto;
+  }
 }

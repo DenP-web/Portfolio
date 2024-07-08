@@ -1,23 +1,10 @@
 .list {
   display: flex;
   gap: 30px;
-}
 
-.socialLink {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: $c-accent;
-}
-
-.link {
-  display: block;
-  font-size: 22px;
-  font-weight: 600;
-  color: $c-accent;
-
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  @include mxw($xs) {
+    gap: 10px;
   }
 }
+
+

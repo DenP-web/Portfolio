@@ -1,0 +1,12 @@
+.wrapper {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+
+  @include mxw($lg) {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+  }
+}

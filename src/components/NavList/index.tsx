@@ -1,23 +1,30 @@
 import React from "react";
 
-import styles from './NavList.module.scss'
+import { CustomLink, SocialLink } from "../../ui";
+
+import styles from "./NavList.module.scss";
 
 import { ILink } from "../../models";
-import { Link } from "react-router-dom";
 
 interface NavListProps {
   links: ILink[];
+  toggleMenu?: () => void;
 }
 
-const NavList: React.FC<NavListProps> = ({ links }: NavListProps) => {
+const NavList: React.FC<NavListProps> = ({ links, toggleMenu }) => {
   return (
     <ul className={styles.list}>
       {links.map((link: ILink, index: number) => (
-        <li key={index}>
+        <li key={link.id}>
           {link.to !== undefined ? (
-            <Link className={styles.link} to={link.to}>{link.text}</Link>
+            <CustomLink onClick={toggleMenu} to={link.to} text={link.text!} />
           ) : (
-            <a className={styles.socialLink} href={link.href}></a>
+            <SocialLink
+              classes={link.className!}
+              href={link.href!}
+              srText={link.srText!}
+              index={index}
+            />
           )}
         </li>
       ))}

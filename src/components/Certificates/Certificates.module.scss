@@ -1,0 +1,14 @@
+.certificates {
+  margin-top: 50px;
+  display: flex;
+  gap: 44px;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  @include mxw($sm) {
+    gap: 30px;
+    overflow-x: auto;
+  }
+}

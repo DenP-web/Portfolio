@@ -1,10 +1,12 @@
 import React from 'react'
+import { Achievements } from '../../containers'
+
 
 const AchievementsPage: React.FC = () => {
   return (
-    <div>
-      ResumePage
-    </div>
+    <main>
+      <Achievements />
+    </main>
   )
 }
 

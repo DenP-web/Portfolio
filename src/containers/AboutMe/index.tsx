@@ -1,16 +1,18 @@
 import React from "react";
 
-import Text from "../../components/Text";
+
+import { BigTitle, Text } from "../../ui";
 import AboutMeLinks from "./AboutMeLinks";
 
 import styles from "./AboutMe.module.scss";
-import BigTitle from "../../components/BigTitle/BigTitle";
+
+import classNames from "classnames";
 
 const AboutMe: React.FC = () => {
   return (
     <section className={styles.aboutSection}>
       <div>
-        <h3 className={styles.helloTitle}>Hello web company,</h3>
+        <h3 className={classNames(styles.helloTitle, 'slide-left-anim') }>Hello web company,</h3>
         <BigTitle>I’m Denys</BigTitle>
       </div>
       <div className={styles.flex}>
