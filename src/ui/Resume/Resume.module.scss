@@ -7,9 +7,21 @@
   max-height: 680px;
   margin-bottom: 60px;
 
+  @include mxw($lg) {
+    width: 80%;
+    overflow-y: unset;
+    border: 1px solid #005FF1;
+    border-radius: 10px;
+    max-height: 100%;
+    margin: 0 auto 60px;
+  }
+
+
   img {
     display: block;
     width: 100%;
     object-fit: contain;
   }
+
+
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import classNames from "classnames";
+
+import { AccentLink } from "../../ui";
+
 import styles from "./ProjectItem.module.scss";
-import { AccentBtn } from "../../ui";
 
 interface ProjectItemProps {
   href: string;
@@ -29,7 +31,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             </li>
           ))}
         </ul>
-        <AccentBtn href={href}>check my work</AccentBtn>
+        <AccentLink href={href}>check my work</AccentLink>
       </div>
       <div className={styles.image}>
         <img src={imgUrl} alt="Image of first section of the web page" />

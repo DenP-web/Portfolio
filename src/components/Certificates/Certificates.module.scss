@@ -4,8 +4,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 44px;
 
-  &::-webkit-scrollbar {
-    height: 8px;
+  @include mxw($vlg) {
+    gap: 20px;
+    place-items: center;
   }
 
   @include mxw($sm) {
@@ -13,4 +14,10 @@
     gap: 30px;
     overflow-x: auto;
   }
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  
 }

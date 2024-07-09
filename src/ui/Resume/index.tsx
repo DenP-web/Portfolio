@@ -1,9 +1,9 @@
 import React from "react";
+import classNames from "classnames";
 
 import styles from "./Resume.module.scss";
 
 import cv from "../../assets/images/cv.webp";
-import classNames from "classnames";
 
 const Resume: React.FC = () => {
   return (

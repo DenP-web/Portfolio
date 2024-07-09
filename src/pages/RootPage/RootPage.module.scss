@@ -1,9 +1,9 @@
 .wrapper {
   padding: 0 15px;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 
-  @include mxw($lg) {
-    overflow-y: auto;
-  }
+  // @include mxw($lg) {
+  //   overflow-y: auto;
+  // }
 }

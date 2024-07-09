@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
+
 import { BigTitle } from "../../ui";
-
-import styles from "./Projects.module.scss";
-
 import { IProject } from "../../models";
 import { ProjectListScroll, ProjectsListSwiper } from "../../components";
+
+import styles from "./Projects.module.scss";
 
 const projectsArr: IProject[] = [
   {

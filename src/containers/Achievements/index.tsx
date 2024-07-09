@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BigTitle, AccentBtn, Resume, Text } from "../../ui";
+import { BigTitle, Resume, Text, AccentLink } from "../../ui";
 import { Certificates } from "../../components";
 
 import styles from "./Achievements.module.scss";
@@ -19,9 +19,9 @@ const Achievements: React.FC = () => {
 
       <div className={styles.right}>
         <Resume />
-        <AccentBtn href="/CV.pdf" fileName="Denys_Popov_CV.pdf">
+        <AccentLink href="/CV.pdf" fileName="Denys_Popov_CV.pdf">
           Download CV
-        </AccentBtn>
+        </AccentLink>
       </div>
     </section>
   );

@@ -1,15 +1,15 @@
 import React, { ReactNode } from "react";
 
-import styles from "./AccentBtn.module.scss";
+import styles from "./AccentLink.module.scss";
 import classNames from "classnames";
 
-interface AccentBtnProps {
+interface AccentLinkProps {
   fileName?: string;
   href: string;
   children: ReactNode;
 }
 
-const AccentBtn: React.FC<AccentBtnProps> = ({
+const AccentLink: React.FC<AccentLinkProps> = ({
   fileName,
   href,
   children,
@@ -25,4 +25,4 @@ const AccentBtn: React.FC<AccentBtnProps> = ({
   );
 };
 
-export default AccentBtn;
+export default AccentLink;

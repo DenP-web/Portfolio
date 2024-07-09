@@ -1,8 +1,9 @@
 import React from "react";
-import Modal from "../../components/Modal";
+
+import {Modal} from "../../components";
+import { ButtonClose } from "../../ui";
 
 import styles from './BigImgModal.module.scss'
-import { ButtonClose } from "../../ui";
 
 interface BigImgModalProps {
   imgUrl: string;

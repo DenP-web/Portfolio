@@ -1,6 +1,20 @@
 .item img {
   cursor: pointer;
-  width: 206px;
+  width: inherit;
   height: 160px;
   object-fit: contain;
+
+
+  @include mxw($vlg) {
+    width: 180px;
+  }
+
+  @include mxw($lg) {
+    width: inherit;
+  }
+
+  @include mxw($sm) {
+    width: 180px;
+  }
+
 }
