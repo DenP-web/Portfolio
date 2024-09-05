@@ -15,7 +15,7 @@ const BurgerBtn: React.FC<BurgerBtnProps> = ({ isOpen, toggleMenu }) => {
   });
 
   return (
-    <button className={classes} onClick={toggleMenu} style={{ "--anim-order": 4 }}>
+    <button className={classes} onClick={toggleMenu}  style={{ "--anim-order": 4 } as React.CSSProperties}>
       <span className={styles.line}></span>
       <span className="sr-only">Button for open mobile menu</span>
     </button>

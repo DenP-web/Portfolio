@@ -1,0 +1,7 @@
+.image img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  object-fit: contain;
+  height: 60svh;
+}/*# sourceMappingURL=BigImgModal.module.css.map */

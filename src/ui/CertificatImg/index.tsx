@@ -29,7 +29,7 @@ const CertificatImg: React.FC<CertificatImgProps> = ({
     <>
       <li
         className={classNames(styles.item, "slide-left-anim")}
-        style={{ "--anim-order": indexAnim }}
+        style={{ "--anim-order": indexAnim } as React.CSSProperties}
       >
         <img src={imgUrl} alt={alt} onClick={openModalFunc} />
       </li>

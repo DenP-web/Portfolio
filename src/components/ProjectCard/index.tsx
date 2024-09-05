@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       className={classNames(styles.card, "slide-left-anim")}
-      style={{ "--anim-order": animIndex }}
+      style={{ "--anim-order": animIndex } as React.CSSProperties}
     >
       <div className={styles.info}>
         <h3 className={styles.title}>{title}</h3>
