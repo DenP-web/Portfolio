@@ -1,38 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 
-import { AccentLink } from "../../ui";
+import { AccentLink, SocialLink } from "../../ui";
 
-import styles from "./ProjectItem.module.scss";
+import styles from "./ProjectCard.module.scss";
+import { IProject } from "../../models";
 
-interface ProjectItemProps {
-  href: string;
-  title: string;
-  technologies: string[];
-  imgUrl: string;
+interface ProjectCardProps extends IProject {
   animIndex: number;
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({
+const ProjectCard: React.FC<ProjectCardProps> = ({
   href,
   title,
   technologies,
   imgUrl,
   animIndex,
+  gitUrl
 }) => {
-
-  const [tabType, setTabType] = useState<string>('tech')
-
   return (
     <div
-      className={classNames(styles.flex, "slide-left-anim")}
+      className={classNames(styles.card, "slide-left-anim")}
       style={{ "--anim-order": animIndex }}
     >
       <div className={styles.info}>
         <h3 className={styles.title}>{title}</h3>
-
-        
-
         <ul className={styles["tech-list"]}>
           {technologies.map((tech: string, index: number) => (
             <li key={index}>
@@ -40,6 +32,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             </li>
           ))}
         </ul>
+        <SocialLink
+          classes={["socialLink", "socialLink--github", "mb--bottom"]}
+          href={gitUrl}
+          srText={"Link on project github repository"}
+        />
         <AccentLink href={href}>check my work</AccentLink>
       </div>
       <div className={styles.image}>
@@ -49,4 +46,4 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   );
 };
 
-export default ProjectItem;
+export default ProjectCard;

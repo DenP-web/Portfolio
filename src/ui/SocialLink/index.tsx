@@ -6,12 +6,12 @@ interface SocialLinkProps {
   classes: string[];
   href: string;
   srText: string;
-  index: number;
+  index?: number;
 }
 
 const cx = classNames.bind(styles);
 
-const SocialLink: React.FC<SocialLinkProps> = ({ classes, href, srText, index }) => {
+const SocialLink: React.FC<SocialLinkProps> = ({ classes, href, srText, index=0 }) => {
   const className = cx({
     "slide-left-anim": true,
     ...classes.reduce((acc, cls) => ({ ...acc, [styles[cls]]: true }), {}),

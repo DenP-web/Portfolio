@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { BigTitle } from "../../ui";
 import { IProject } from "../../models";
-import { ProjectListScroll, ProjectsListSwiper } from "../../components";
+import { ProjectsList } from "../../components";
 
 import styles from "./Projects.module.scss";
 
@@ -16,13 +16,35 @@ const projectsArr: IProject[] = [
       "NodeJS",
       "ExpressJS",
       "MongoDB",
-      "mongoose",
+      "Prisma",
       "NextUI",
       "TailwindCSS",
       "SocketIO",
+      "Jest",
+      "React Testing Library",
     ],
     href: "https://small-social.onrender.com",
+    gitUrl: "https://github.com/DenP-web/Small-social",
     imgUrl: "/images/projects/DeDigger.png",
+  },
+  {
+    id: 2,
+    title: "Task Chat",
+    technologies: [
+      "HTML",
+      "CSS modules",
+      "ReactJS",
+      "TypeScript",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "mongoose",
+      "SocketIO",
+      "OAuth",
+    ],
+    href: "https://chat-sa6m.onrender.com",
+    gitUrl: "https://github.com/DenP-web/Chat",
+    imgUrl: "/images/projects/task-chat.png",
   },
   {
     id: 2,
@@ -36,6 +58,7 @@ const projectsArr: IProject[] = [
       "SwiperJS",
     ],
     href: "https://loftshoponline.com.ua/",
+    gitUrl: "https://github.com/DenP-web/LoftShopOnline",
     imgUrl: "/images/projects/loft.png",
   },
   {
@@ -50,33 +73,16 @@ const projectsArr: IProject[] = [
       "SwiperJS",
     ],
     href: "https://budbaza.net/",
+    gitUrl: "https://github.com/DenP-web/BydBaza",
     imgUrl: "/images/projects/budBaza.png",
   },
 ];
 
 const Projects: React.FC = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 960);
-    };
-    setIsMobile(window.innerWidth <= 960);
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <section className={styles.sectionProjects}>
       <BigTitle>PROJECTS</BigTitle>
-      {isMobile ? (
-        <ProjectListScroll projects={projectsArr} />
-      ) : (
-        <ProjectsListSwiper projects={projectsArr} />
-      )}
+      <ProjectsList projects={projectsArr} />
     </section>
   );
 };

@@ -19,5 +19,6 @@ export interface IProject {
   title: string;
   technologies: string[];
   href: string;
+  gitUrl: string
   imgUrl: string;
 }

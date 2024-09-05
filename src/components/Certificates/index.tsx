@@ -9,22 +9,22 @@ import styles from "./Certificates.module.scss";
 const certificates: ICertificat[] = [
   {
     id: 1,
-    imgUrl: "/src/assets/images/cer-js.webp",
+    imgUrl: "/images/cer-js.webp",
     alt: "My certificate of completion of the course on JavaScript",
   },
   {
     id: 2,
-    imgUrl: "/src/assets/images/cer-ts.webp",
+    imgUrl: "/images/cer-ts.webp",
     alt: "My certificate of completion of the course on TypeScript",
   },
   {
     id: 3,
-    imgUrl: "/src/assets/images/cer-react.webp",
+    imgUrl: "/images/cer-react.webp",
     alt: "My certificate of completion of the course on ReactJS Library",
   },
   {
     id: 4,
-    imgUrl: "/src/assets/images/cer-func.webp",
+    imgUrl: "/images/cer-func.webp",
     alt: "My certificate of completion of the course on functions in JavaScript",
   },
 ];
