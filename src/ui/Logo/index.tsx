@@ -4,14 +4,12 @@ import classNames from "classnames";
 
 import { ROUTES } from "../../constants/routes";
 
-import logo from "../../assets/images/logo.svg";
-
 import styles from "./Logo.module.scss";
 
 const Logo: React.FC = () => {
   return (
     <Link to={ROUTES.ABOUT} className={classNames(styles.logo, 'fade-out-anim')}>
-      <img src={logo} alt="Logo" />
+      <img src="/images/logo.svg" alt="Logo" />
     </Link>
   );
 };

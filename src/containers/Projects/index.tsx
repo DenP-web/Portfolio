@@ -9,19 +9,21 @@ import styles from "./Projects.module.scss";
 const projectsArr: IProject[] = [
   {
     id: 1,
-    title: "Loft.ShopOnline",
+    title: "DeDigger",
     technologies: [
-      "HTML",
-      "SCSS",
-      "GULP",
-      "JavaScript",
-      "WordPress",
-      "SwiperJS",
+      "ReactJS",
+      "TypeScript",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "mongoose",
+      "NextUI",
+      "TailwindCSS",
+      "SocketIO",
     ],
-    href: "#",
-    imgUrl: "/src/assets/images/projects/1.webp",
+    href: "https://small-social.onrender.com",
+    imgUrl: "/images/projects/DeDigger.png",
   },
-
   {
     id: 2,
     title: "Loft.ShopOnline",
@@ -33,13 +35,12 @@ const projectsArr: IProject[] = [
       "WordPress",
       "SwiperJS",
     ],
-    href: "#",
-    imgUrl: "/src/assets/images/projects/1.webp",
+    href: "https://loftshoponline.com.ua/",
+    imgUrl: "/images/projects/loft.png",
   },
-
   {
     id: 3,
-    title: "Loft.ShopOnline",
+    title: "BudBaza",
     technologies: [
       "HTML",
       "SCSS",
@@ -48,8 +49,8 @@ const projectsArr: IProject[] = [
       "WordPress",
       "SwiperJS",
     ],
-    href: "#",
-    imgUrl: "/src/assets/images/projects/1.webp",
+    href: "https://budbaza.net/",
+    imgUrl: "/images/projects/budBaza.png",
   },
 ];
 

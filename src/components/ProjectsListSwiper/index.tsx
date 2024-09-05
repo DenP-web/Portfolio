@@ -3,8 +3,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ProjectItem } from "..";
 
-import "swiper/css";
 import { IProject } from "../../models";
+
+import "swiper/css";
 
 interface ProjectsListSwiperProps {
   projects: IProject[];

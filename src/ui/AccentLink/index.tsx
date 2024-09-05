@@ -19,6 +19,7 @@ const AccentLink: React.FC<AccentLinkProps> = ({
       className={classNames("scale-anim", styles.btn)}
       href={href}
       download={fileName}
+      target="_blank"
     >
       {children}
     </a>

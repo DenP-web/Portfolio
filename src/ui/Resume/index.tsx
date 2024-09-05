@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import styles from "./Resume.module.scss";
 
-import cv from "../../assets/images/cv.webp";
+import cv from "/images/cv.webp";
 
 const Resume: React.FC = () => {
   return (

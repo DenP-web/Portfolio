@@ -11,7 +11,7 @@ const socialLinks: ILink[] = [
   // In future this data will come from server
   {
     id: 1,
-    href: "#",
+    href: "https://t.me/d_popov777",
     srText: 'Link to my telegram',
     className: ["socialLink", "socialLink--telegram"],
   },

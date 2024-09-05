@@ -18,7 +18,7 @@
     height: 16px;
     right: -14px;
     top: -10px;
-    background-image: url('../../../assets/images/shuriken.svg');
+    background-image: url('/images/shuriken.svg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -28,11 +28,11 @@
   }
 
   &--portfolio {
-    background-image: url('../../../assets/images/doc.svg');
+    background-image: url('/images/doc.svg');
     margin-bottom: 20px;
   }
 
   &--achiev {
-    background-image: url('../../../assets/images/plate.svg');
+    background-image: url('/images/plate.svg');
   }
 }

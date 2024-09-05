@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classNames from "classnames";
 
 import { AccentLink } from "../../ui";
@@ -10,7 +10,7 @@ interface ProjectItemProps {
   title: string;
   technologies: string[];
   imgUrl: string;
-  animIndex: number
+  animIndex: number;
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
@@ -18,12 +18,21 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   title,
   technologies,
   imgUrl,
-  animIndex
+  animIndex,
 }) => {
+
+  const [tabType, setTabType] = useState<string>('tech')
+
   return (
-    <div className={classNames(styles.flex, 'slide-left-anim')}  style={{"--anim-order": animIndex}}>
+    <div
+      className={classNames(styles.flex, "slide-left-anim")}
+      style={{ "--anim-order": animIndex }}
+    >
       <div className={styles.info}>
         <h3 className={styles.title}>{title}</h3>
+
+        
+
         <ul className={styles["tech-list"]}>
           {technologies.map((tech: string, index: number) => (
             <li key={index}>

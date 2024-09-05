@@ -8,15 +8,15 @@
   fill: #005FF1;
 
   &--telegram {
-    background-image: url('../../assets/images/telegram.svg');
+    background-image: url('/images/telegram.svg');
   }
 
   &--linked {
-    background-image: url('../../assets/images/linked.svg');
+    background-image: url('/images/linked.svg');
   }
 
   &--github {
-    background-image: url('../../assets/images/github.svg');
+    background-image: url('/images/github.svg');
   }
 
   &:hover {

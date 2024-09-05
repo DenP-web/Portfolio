@@ -13,7 +13,7 @@
     top: 30px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../../assets/images/shuriken.svg');
+    background-image: url('/images/shuriken.svg');
     animation: rotate 2s linear infinite;  
   }
 
@@ -54,5 +54,4 @@
   @include mxw($xs) {
     font-size: 54px;
   }
-
 }
